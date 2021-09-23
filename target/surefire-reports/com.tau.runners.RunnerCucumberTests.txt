@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.tau.runners.RunnerCucumberTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.018 s <<< FAILURE! - in com.tau.runners.RunnerCucumberTests
+initializationError(com.tau.runners.RunnerCucumberTests)  Time elapsed: 0.018 s  <<< ERROR!
+io.cucumber.core.exception.CucumberException: Couldn't load plugin class: hmtl
+Caused by: java.lang.ClassNotFoundException: hmtl
+

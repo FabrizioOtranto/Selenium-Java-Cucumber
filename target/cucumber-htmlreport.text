@@ -1,0 +1,31 @@
+Feature: Login Funcionality DataTable
+	In order to do rendering functions
+	As a valid administrator 
+	I want to login successfully
+
+  Scenario: Login Succesful DataTable                     [90m# src/test/resources/DataTableLogin.feature:8[0m
+    [32mGiven [0m[32mThe user is in the login page of Rendring webDB[0m [90m# com.tau.steps.DataTableSteps.the_user_is_in_the_login_page_of_rendering_web() in file:/C:/Users/fabry/eclipse-workspace/tau-cucumber-course/target/test-classes/[0m
+    [32mWhen [0m[32mThe user enter valid credentials[0m                 [90m# com.tau.steps.DataTableSteps.the_user_enter_valid_credentials(DataTable) in file:/C:/Users/fabry/eclipse-workspace/tau-cucumber-course/target/test-classes/[0m
+    [32mThen [0m[32mThe user should be taken to the index pageDB[0m     [90m# com.tau.steps.DataTableSteps.the_user_should_be_taken_to_the_index_page() in file:/C:/Users/fabry/eclipse-workspace/tau-cucumber-course/target/test-classes/[0m
+
+Feature: Login Funcionality
+	In order to do rendering functions
+	As a valid administrator 
+	I want to login successfully
+
+  Scenario Outline: Login Succesful [90m# src/test/resources/Login.feature:8[0m
+    [36mGiven The user is in the login page of automationPractice[0m
+    [36mWhen The user enter valid <username> and <password> with <userFullName>[0m
+    [36mThen The user should be taken to my account[0m
+
+    Examples: 
+
+  Scenario Outline: Login Succesful                                    [90m# src/test/resources/Login.feature:16[0m
+    [32mGiven [0m[32mThe user is in the login page of automationPractice[0m          [90m# com.tau.steps.Steps.the_user_is_in_the_login_page_of_automationPractice() in file:/C:/Users/fabry/eclipse-workspace/tau-cucumber-course/target/test-classes/[0m
+    [32mWhen [0m[32mThe user enter valid [0m[32m[1m"qs123@gmail.com"[0m[32m and [0m[32m[1m"qs123"[0m[32m with [0m[32m[1m"a a"[0m [90m# com.tau.steps.Steps.the_user_enter_valid_credentials(String,String,String) in file:/C:/Users/fabry/eclipse-workspace/tau-cucumber-course/target/test-classes/[0m
+    [32mThen [0m[32mThe user should be taken to my account[0m                        [90m# com.tau.steps.Steps.the_user_should_be_taken_to_my_account() in file:/C:/Users/fabry/eclipse-workspace/tau-cucumber-course/target/test-classes/[0m
+
+  Scenario Outline: Login Succesful                                    [90m# src/test/resources/Login.feature:17[0m
+    [32mGiven [0m[32mThe user is in the login page of automationPractice[0m          [90m# com.tau.steps.Steps.the_user_is_in_the_login_page_of_automationPractice() in file:/C:/Users/fabry/eclipse-workspace/tau-cucumber-course/target/test-classes/[0m
+    [32mWhen [0m[32mThe user enter valid [0m[32m[1m"qs123@gmail.com"[0m[32m and [0m[32m[1m"qs123"[0m[32m with [0m[32m[1m"a a"[0m [90m# com.tau.steps.Steps.the_user_enter_valid_credentials(String,String,String) in file:/C:/Users/fabry/eclipse-workspace/tau-cucumber-course/target/test-classes/[0m
+    [32mThen [0m[32mThe user should be taken to my account[0m                        [90m# com.tau.steps.Steps.the_user_should_be_taken_to_my_account() in file:/C:/Users/fabry/eclipse-workspace/tau-cucumber-course/target/test-classes/[0m
